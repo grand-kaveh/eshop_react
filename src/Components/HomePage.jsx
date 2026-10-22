@@ -1,5 +1,10 @@
-
-
+import Logo from '../assets/images/home/logo.png'
+import Girl2 from '../assets/images/home/girl2.jpg'
+import Pricing from '../assets/images/home/pricing.png'
+import Gallery from '../assets/images/home/Gallery.jpg'
+import Product from '../assets/images/home/product.jpg'
+import Tabs from '../assets/images/home/Tabs.png'
+import Map from '../assets/images/home/map.png'
 
 export default function HomePage() {
 
@@ -45,7 +50,7 @@ export default function HomePage() {
                         
                         <div className="col-sm-4" >{/* style="text-align: left;" */} 
                             <div className="logo">
-                                <a href="index.html"><img src="images/home/logo.png" alt="Logo" /></a>   {/*style="text-align: center;"*/}
+                                <a href="index.html"><img src={Logo} alt="Logo" /></a>   {/*style="text-align: center;"*/}
                             </div>
                         </div>
                         
@@ -131,8 +136,8 @@ export default function HomePage() {
                                         <button type="button" className="btn btn-default get">Get it now</button>
                                     </div>
                                     <div className="col-sm-6">
-                                        <img src="images/home/girl2.jpg" className="girl img-responsive" alt="" />
-                                        <img src="images/home/pricing.png"  className="pricing" alt="" />
+                                        <img src={Girl2} className="girl img-responsive" alt="" />
+                                        <img src={Pricing}  className="pricing" alt="" />
                                     </div>
                                 </div>
                                 
@@ -144,8 +149,8 @@ export default function HomePage() {
                                         <button type="button" className="btn btn-default get">Get it now</button>
                                     </div>
                                     <div className="col-sm-6">
-                                        <img src="images/home/girl2.jpg" className="girl img-responsive" alt="" />
-                                        <img src="images/home/pricing.png" className="pricing" alt="" />
+                                        <img src={Girl2} className="girl img-responsive" alt="" />
+                                        <img src={Pricing} className="pricing" alt="" />
                                     </div>
                                 </div>
                                 
@@ -178,7 +183,7 @@ export default function HomePage() {
                                             <div className="product-image-wrapper">
                                                 <div className="single-products">
                                                     <div className="productinfo text-center">
-                                                        <img src="images/home/Gallery.jpg" alt="" />
+                                                        <img src={Gallery} alt="" />
                                                         <h2>1.250.000 R</h2>
                                                         <p>توضیحات کوتاه محصول</p>
                                                         <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خرید</a>
@@ -191,7 +196,7 @@ export default function HomePage() {
                                             <div className="product-image-wrapper">
                                                 <div className="single-products">
                                                     <div className="productinfo text-center">
-                                                        <img src="images/home/Gallery.jpg" alt="" />
+                                                        <img src={Gallery} alt="" />
                                                         <h2>1.250.000 R</h2>
                                                         <p>توضیحات کوتاه محصول</p>
                                                         <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خرید</a>
@@ -204,7 +209,7 @@ export default function HomePage() {
                                             <div className="product-image-wrapper">
                                                 <div className="single-products">
                                                     <div className="productinfo text-center">
-                                                        <img src="images/home/Gallery.jpg" alt="" />
+                                                        <img src={Gallery} alt="" />
                                                         <h2>1.250.000 R</h2>
                                                         <p>توضیحات کوتاه محصول</p>
                                                         <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خرید</a>
@@ -217,7 +222,7 @@ export default function HomePage() {
                                             <div className="product-image-wrapper">
                                                 <div className="single-products">
                                                     <div className="productinfo text-center">
-                                                        <img src="images/home/Gallery.jpg" alt="" />
+                                                        <img src={Gallery} alt="" />
                                                         <h2>1.250.000 R</h2>
                                                         <p>توضیحات کوتاه محصول</p>
                                                         <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خرید</a>
@@ -232,7 +237,7 @@ export default function HomePage() {
                                             <div className="product-image-wrapper">
                                                 <div className="single-products">
                                                     <div className="productinfo text-center">
-                                                        <img src="images/home/Gallery.jpg" alt="" />
+                                                        <img src={Gallery} alt="" />
                                                         <h2>1.250.000 R</h2>
                                                         <p>توضیحات کوتاه محصول</p>
                                                         <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خرید</a>
@@ -245,7 +250,7 @@ export default function HomePage() {
                                             <div className="product-image-wrapper">
                                                 <div className="single-products">
                                                     <div className="productinfo text-center">
-                                                        <img src="images/home/Gallery.jpg" alt="" />
+                                                        <img src={Gallery} alt="" />
                                                         <h2>1.250.000 R</h2>
                                                         <p>توضیحات کوتاه محصول</p>
                                                         <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خرید</a>
@@ -258,7 +263,7 @@ export default function HomePage() {
                                             <div className="product-image-wrapper">
                                                 <div className="single-products">
                                                     <div className="productinfo text-center">
-                                                        <img src="images/home/Gallery.jpg" alt="" />
+                                                        <img src={Gallery} alt="" />
                                                         <h2>1.250.000 R</h2>
                                                         <p>توضیحات کوتاه محصول</p>
                                                         <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خرید</a>
@@ -271,7 +276,7 @@ export default function HomePage() {
                                             <div className="product-image-wrapper">
                                                 <div className="single-products">
                                                     <div className="productinfo text-center">
-                                                        <img src="images/home/Gallery.jpg" alt="" />
+                                                        <img src={Gallery} alt="" />
                                                         <h2>1.250.000 R</h2>
                                                         <p>توضیحات کوتاه محصول</p>
                                                         <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خرید</a>
@@ -301,7 +306,7 @@ export default function HomePage() {
                                     <div className="product-image-wrapper">
                                         <div className="single-products">
                                                 <div className="productinfo text-center">
-                                                    <img src="images/home/product.jpg" alt="" />
+                                                    <img src={Product} alt="" />
                                                     <h2>2.500.000 R</h2>
                                                     <p>توضیحات کوتاه محصـول</p>
                                                     <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -330,7 +335,7 @@ export default function HomePage() {
                                     <div className="product-image-wrapper">
                                         <div className="single-products">
                                                 <div className="productinfo text-center">
-                                                    <img src="images/home/product.jpg" alt="" />
+                                                    <img src={Product} alt="" />
                                                     <h2>2.500.000 R</h2>
                                                     <p>توضیحات کوتاه محصـول</p>
                                                     <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -359,7 +364,7 @@ export default function HomePage() {
                                     <div className="product-image-wrapper">
                                         <div className="single-products">
                                                 <div className="productinfo text-center">
-                                                    <img src="images/home/product.jpg" alt="" />
+                                                    <img src={Product} alt="" />
                                                     <h2>2.500.000 R</h2>
                                                     <p>توضیحات کوتاه محصـول</p>
                                                     <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -388,7 +393,7 @@ export default function HomePage() {
                                     <div className="product-image-wrapper">
                                         <div className="single-products">
                                                 <div className="productinfo text-center">
-                                                    <img src="images/home/product.jpg" alt="" />
+                                                    <img src={Product} alt="" />
                                                     <h2>2.500.000 R</h2>
                                                     <p>توضیحات کوتاه محصـول</p>
                                                     <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -419,7 +424,7 @@ export default function HomePage() {
                                 <div className="product-image-wrapper">
                                     <div className="single-products">
                                             <div className="productinfo text-center">
-                                                <img src="images/home/product.jpg" alt="" />
+                                                <img src={Product} alt="" />
                                                 <h2>2.500.000 R</h2>
                                                 <p>توضیحات کوتاه محصـول</p>
                                                 <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -448,7 +453,7 @@ export default function HomePage() {
                                 <div className="product-image-wrapper">
                                     <div className="single-products">
                                             <div className="productinfo text-center">
-                                                <img src="images/home/product.jpg" alt="" />
+                                                <img src={Product} alt="" />
                                                 <h2>2.500.000 R</h2>
                                                 <p>توضیحات کوتاه محصـول</p>
                                                 <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -477,7 +482,7 @@ export default function HomePage() {
                                 <div className="product-image-wrapper">
                                     <div className="single-products">
                                             <div className="productinfo text-center">
-                                                <img src="images/home/product.jpg" alt="" />
+                                                <img src={Product} alt="" />
                                                 <h2>2.500.000 R</h2>
                                                 <p>توضیحات کوتاه محصـول</p>
                                                 <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -506,7 +511,7 @@ export default function HomePage() {
                                 <div className="product-image-wrapper">
                                     <div className="single-products">
                                             <div className="productinfo text-center">
-                                                <img src="images/home/product.jpg" alt="" />
+                                                <img src={Product} alt="" />
                                                 <h2>2.500.000 R</h2>
                                                 <p>توضیحات کوتاه محصـول</p>
                                                 <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -551,7 +556,7 @@ export default function HomePage() {
                                 <div className="product-image-wrapper">
                                     <div className="single-products">
                                             <div className="productinfo text-center">
-                                                <img src="images/home/product.jpg" alt="" />
+                                                <img src={Product} alt="" />
                                                 <h2>2.500.000 R</h2>
                                                 <p>توضیحات کوتاه محصـول</p>
                                                 <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -580,7 +585,7 @@ export default function HomePage() {
                                 <div className="product-image-wrapper">
                                     <div className="single-products">
                                             <div className="productinfo text-center">
-                                                <img src="images/home/product.jpg" alt="" />
+                                                <img src={Product} alt="" />
                                                 <h2>2.500.000 R</h2>
                                                 <p>توضیحات کوتاه محصـول</p>
                                                 <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -608,7 +613,7 @@ export default function HomePage() {
                                 <div className="product-image-wrapper">
                                     <div className="single-products">
                                             <div className="productinfo text-center">
-                                                <img src="images/home/product.jpg" alt="" />
+                                                <img src={Product} alt="" />
                                                 <h2>2.500.000 R</h2>
                                                 <p>توضیحات کوتاه محصـول</p>
                                                 <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -636,7 +641,7 @@ export default function HomePage() {
                                 <div className="product-image-wrapper">
                                     <div className="single-products">
                                             <div className="productinfo text-center">
-                                                <img src="images/home/product.jpg" alt="" />
+                                                <img src={Product} alt="" />
                                                 <h2>2.500.000 R</h2>
                                                 <p>توضیحات کوتاه محصـول</p>
                                                 <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -667,7 +672,7 @@ export default function HomePage() {
                                 <div className="product-image-wrapper">
                                     <div className="single-products">
                                             <div className="productinfo text-center">
-                                                <img src="images/home/product.jpg" alt="" />
+                                                <img src={Product} alt="" />
                                                 <h2>2.500.000 R</h2>
                                                 <p>توضیحات کوتاه محصـول</p>
                                                 <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -696,7 +701,7 @@ export default function HomePage() {
                                 <div className="product-image-wrapper">
                                     <div className="single-products">
                                             <div className="productinfo text-center">
-                                                <img src="images/home/product.jpg" alt="" />
+                                                <img src={Product} alt="" />
                                                 <h2>2.500.000 R</h2>
                                                 <p>توضیحات کوتاه محصـول</p>
                                                 <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -725,7 +730,7 @@ export default function HomePage() {
                                 <div className="product-image-wrapper">
                                     <div className="single-products">
                                             <div className="productinfo text-center">
-                                                <img src="images/home/product.jpg" alt="" />
+                                                <img src={Product} alt="" />
                                                 <h2>2.500.000 R</h2>
                                                 <p>توضیحات کوتاه محصـول</p>
                                                 <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -754,7 +759,7 @@ export default function HomePage() {
                                 <div className="product-image-wrapper">
                                     <div className="single-products">
                                             <div className="productinfo text-center">
-                                                <img src="images/home/product.jpg" alt="" />
+                                                <img src={Product} alt="" />
                                                 <h2>2.500.000 R</h2>
                                                 <p>توضیحات کوتاه محصـول</p>
                                                 <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -806,7 +811,7 @@ export default function HomePage() {
                                         <div className="product-image-wrapper">
                                             <div className="single-products">
                                                 <div className="productinfo text-center">
-                                                    <img src="images/home/Tabs.png" alt="" />
+                                                    <img src={Tabs} alt="" />
                                                     <h2>560.000 ريال</h2>
                                                     <p>توضیحات کوتاه محصول</p>
                                                     <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -819,7 +824,7 @@ export default function HomePage() {
                                         <div className="product-image-wrapper">
                                             <div className="single-products">
                                                 <div className="productinfo text-center">
-                                                    <img src="images/home/Tabs.png" alt="" />
+                                                    <img src={Tabs} alt="" />
                                                     <h2>560.000 ريال</h2>
                                                     <p>توضیحات کوتاه محصول</p>
                                                     <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -832,7 +837,7 @@ export default function HomePage() {
                                         <div className="product-image-wrapper">
                                             <div className="single-products">
                                                 <div className="productinfo text-center">
-                                                    <img src="images/home/Tabs.png" alt="" />
+                                                    <img src={Tabs} alt="" />
                                                     <h2>560.000 ريال</h2>
                                                     <p>توضیحات کوتاه محصول</p>
                                                     <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -845,7 +850,7 @@ export default function HomePage() {
                                         <div className="product-image-wrapper">
                                             <div className="single-products">
                                                 <div className="productinfo text-center">
-                                                    <img src="images/home/Tabs.png" alt="" />
+                                                    <img src={Tabs} alt="" />
                                                     <h2>560.000 ريال</h2>
                                                     <p>توضیحات کوتاه محصول</p>
                                                     <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -861,7 +866,7 @@ export default function HomePage() {
                                         <div className="product-image-wrapper">
                                             <div className="single-products">
                                                 <div className="productinfo text-center">
-                                                    <img src="images/home/Tabs.png" alt="" />
+                                                    <img src={Tabs} alt="" />
                                                     <h2>560.000 ريال</h2>
                                                     <p>توضیحات کوتاه محصول</p>
                                                     <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -874,7 +879,7 @@ export default function HomePage() {
                                         <div className="product-image-wrapper">
                                             <div className="single-products">
                                                 <div className="productinfo text-center">
-                                                    <img src="images/home/Tabs.png" alt="" />
+                                                    <img src={Tabs} alt="" />
                                                     <h2>560.000 ريال</h2>
                                                     <p>توضیحات کوتاه محصول</p>
                                                     <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -887,7 +892,7 @@ export default function HomePage() {
                                         <div className="product-image-wrapper">
                                             <div className="single-products">
                                                 <div className="productinfo text-center">
-                                                    <img src="images/home/Tabs.png" alt="" />
+                                                    <img src={Tabs} alt="" />
                                                     <h2>560.000 ريال</h2>
                                                     <p>توضیحات کوتاه محصول</p>
                                                     <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -900,7 +905,7 @@ export default function HomePage() {
                                         <div className="product-image-wrapper">
                                             <div className="single-products">
                                                 <div className="productinfo text-center">
-                                                    <img src="images/home/Tabs.png" alt="" />
+                                                    <img src={Tabs} alt="" />
                                                     <h2>560.000 ريال</h2>
                                                     <p>توضیحات کوتاه محصول</p>
                                                     <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -916,7 +921,7 @@ export default function HomePage() {
                                         <div className="product-image-wrapper">
                                             <div className="single-products">
                                                 <div className="productinfo text-center">
-                                                    <img src="images/home/Tabs.png" alt="" />
+                                                    <img src={Tabs} alt="" />
                                                     <h2>560.000 ريال</h2>
                                                     <p>توضیحات کوتاه محصول</p>
                                                     <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -929,7 +934,7 @@ export default function HomePage() {
                                         <div className="product-image-wrapper">
                                             <div className="single-products">
                                                 <div className="productinfo text-center">
-                                                    <img src="images/home/Tabs.png" alt="" />
+                                                    <img src={Tabs} alt="" />
                                                     <h2>560.000 ريال</h2>
                                                     <p>توضیحات کوتاه محصول</p>
                                                     <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -942,7 +947,7 @@ export default function HomePage() {
                                         <div className="product-image-wrapper">
                                             <div className="single-products">
                                                 <div className="productinfo text-center">
-                                                    <img src="images/home/Tabs.png" alt="" />
+                                                    <img src={Tabs} alt="" />
                                                     <h2>560.000 ريال</h2>
                                                     <p>توضیحات کوتاه محصول</p>
                                                     <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -955,7 +960,7 @@ export default function HomePage() {
                                         <div className="product-image-wrapper">
                                             <div className="single-products">
                                                 <div className="productinfo text-center">
-                                                    <img src="images/home/Tabs.png" alt="" />
+                                                    <img src={Tabs} alt="" />
                                                     <h2>560.000 ريال</h2>
                                                     <p>توضیحات کوتاه محصول</p>
                                                     <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -971,7 +976,7 @@ export default function HomePage() {
                                         <div className="product-image-wrapper">
                                             <div className="single-products">
                                                 <div className="productinfo text-center">
-                                                    <img src="images/home/Tabs.png" alt="" />
+                                                    <img src={Tabs} alt="" />
                                                     <h2>560.000 ريال</h2>
                                                     <p>توضیحات کوتاه محصول</p>
                                                     <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -984,7 +989,7 @@ export default function HomePage() {
                                         <div className="product-image-wrapper">
                                             <div className="single-products">
                                                 <div className="productinfo text-center">
-                                                    <img src="images/home/Tabs.png" alt="" />
+                                                    <img src={Tabs} alt="" />
                                                     <h2>560.000 ريال</h2>
                                                     <p>توضیحات کوتاه محصول</p>
                                                     <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -997,7 +1002,7 @@ export default function HomePage() {
                                         <div className="product-image-wrapper">
                                             <div className="single-products">
                                                 <div className="productinfo text-center">
-                                                    <img src="images/home/Tabs.png" alt="" />
+                                                    <img src={Tabs} alt="" />
                                                     <h2>560.000 ريال</h2>
                                                     <p>توضیحات کوتاه محصول</p>
                                                     <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -1010,7 +1015,7 @@ export default function HomePage() {
                                         <div className="product-image-wrapper">
                                             <div className="single-products">
                                                 <div className="productinfo text-center">
-                                                    <img src="images/home/Tabs.png" alt="" />
+                                                    <img src={Tabs} alt="" />
                                                     <h2>560.000 ريال</h2>
                                                     <p>توضیحات کوتاه محصول</p>
                                                     <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -1026,7 +1031,7 @@ export default function HomePage() {
                                         <div className="product-image-wrapper">
                                             <div className="single-products">
                                                 <div className="productinfo text-center">
-                                                    <img src="images/home/Tabs.png" alt="" />
+                                                    <img src={Tabs} alt="" />
                                                     <h2>560.000 ريال</h2>
                                                     <p>توضیحات کوتاه محصول</p>
                                                     <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -1039,7 +1044,7 @@ export default function HomePage() {
                                         <div className="product-image-wrapper">
                                             <div className="single-products">
                                                 <div className="productinfo text-center">
-                                                    <img src="images/home/Tabs.png" alt="" />
+                                                    <img src={Tabs} alt="" />
                                                     <h2>560.000 ريال</h2>
                                                     <p>توضیحات کوتاه محصول</p>
                                                     <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -1052,7 +1057,7 @@ export default function HomePage() {
                                         <div className="product-image-wrapper">
                                             <div className="single-products">
                                                 <div className="productinfo text-center">
-                                                    <img src="images/home/Tabs.png" alt="" />
+                                                    <img src={Tabs} alt="" />
                                                     <h2>560.000 ريال</h2>
                                                     <p>توضیحات کوتاه محصول</p>
                                                     <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -1065,7 +1070,7 @@ export default function HomePage() {
                                         <div className="product-image-wrapper">
                                             <div className="single-products">
                                                 <div className="productinfo text-center">
-                                                    <img src="images/home/Tabs.png" alt="" />
+                                                    <img src={Tabs} alt="" />
                                                     <h2>560.000 ريال</h2>
                                                     <p>توضیحات کوتاه محصول</p>
                                                     <a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>افزودن به سبـد خریـد</a>
@@ -1106,12 +1111,12 @@ export default function HomePage() {
                     <div className="row">
                         <div className="col-sm-3">
                             <div className="address">
-                                <img src="images/home/map.png" alt="" />
+                                <img src={Map} alt="" />
                             </div>
                         </div>
                         <div className="col-sm-3">
                             <div className="address">
-                                <img src="images/home/map.png" alt="" />
+                                <img src={Map} alt="" />
                             </div>
                         </div>
                         <div className="col-sm-6">
