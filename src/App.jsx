@@ -12,7 +12,7 @@ function App() {
         <NavMenu />
 
         <Routes>
-          <Route path='' element={<HomePage />} />
+          <Route path='/' element={<HomePage />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
 
