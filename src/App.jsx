@@ -11,8 +11,17 @@ import "./assets/css/responsive.css"
 import NotFound from './Components/NotFound'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import HomePage from './Components/HomePage'
-// import NavMenu from './Components/NavMenu'
+import Favariots from './Components/Favariots'
+import Login from './Components/Login'
+import Cart from './Components/Cart'
+import Checkout from './Components/Checkout'
+import Shop from './Components/Shop'
+import Details from './Components/Details'
 import DocTitle from './Components/Utilities/DocTitle'
+// import Blogs from './Components/Blogs'
+// import AboutUs from './Components/AboutUs'
+// import ContactUs from './Components/ContactUs'
+
 
 function App() {
 
@@ -20,12 +29,21 @@ function App() {
     <>
       <Router>
 
-        {/* <NavMenu /> */}
         <DocTitle />
         
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='*' element={<NotFound />} />
+          <Route path='/favariots' element={<Favariots />} />
+          <Route path='/shop' element={<Shop />} />
+          <Route path='/shop/:ProductId' element={<Details />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/cart' element={<Cart />} />
+          <Route path='/checkout' element={<Checkout />} />
+          {/* <Route path='/checkout' element={<Blogs />} /> */}
+          {/* <Route path='/about-us' element={<AboutUs />} /> */}
+          {/* <Route path='/contact-us' element={<ContactUs />} /> */}
+
         </Routes>
 
     </Router>

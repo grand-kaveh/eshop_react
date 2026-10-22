@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Logo from '../assets/images/home/logo.png'
 
 export default function Header() {
@@ -34,27 +35,19 @@ export default function Header() {
             <div className="header-middle">
                 <div className="container">
                     <div className="row">
-                        {/* <div className="col-sm-4 header-middle-menu">
-                            <div className="shop-menu pull-left">
-                                <ul className="nav navbar-nav">
-                                    <li><a href="checkout.html"><i className="fa fa-crosshairs"></i> پرداخت</a></li>
-                                </ul>
-                            </div>
-                        </div> */}
                         
-                        <div className="col-sm-4" >{/* style="text-align: left;" */} 
+                        <div className="col-sm-4" >
                             <div className="logo">
-                                <a href="index.html"><img src={Logo} alt="Logo" /></a>   {/*style="text-align: center;"*/}
+                                <a href="index.html"><img src={Logo} alt="Logo" /></a>  
                             </div>
                         </div>
                         
                         <div className="col-sm-8 header-middle-menu">
                             <div className="shop-menu pull-right">
                                 <ul className="nav navbar-nav">
-                                    <li><a href="#"><i className="fa fa-user"></i> حساب کاربـری</a></li>
-                                    <li><a href="#"><i className="fa fa-star"></i> لیست علاقه مندی ها</a></li>
-                                    <li><a href="login.html"><i className="fa fa-lock"></i> ورود</a></li>
-                                    <li><a href="cart.html"><i className="fa fa-shopping-cart"></i> سبد خریـد</a></li>
+                                    <li><Link to='/favariots'><i className="fa fa-star"></i> لیست علاقه مندی ها</Link></li>
+                                    <li><Link to='/login'><i className="fa fa-lock"></i> ورود</Link></li>
+                                    <li><Link to='/cart'><i className="fa fa-shopping-cart"></i> سبد خریـد</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -83,24 +76,16 @@ export default function Header() {
                             </div>
                             <div className="mainmenu pull-right">
                                 <ul className="nav navbar-nav collapse navbar-collapse">
-                                    <li><a href="index.html" className="active">خـانه</a></li>
-                                    <li className="dropdown"><a href="#">فروشگـاه<i className="fa fa-angle-down"></i></a>
+                                    <li><Link to="/" className="active">خـانه</Link></li>
+                                    <li className="dropdown"><a>فروشگـاه<i className="fa fa-angle-down"></i></a>
                                         <ul role="menu" className="sub-menu">
-                                            <li><a href="shop.html">محصولات</a></li>
-                                            <li><a href="product-details.html">جزئیات محصولات</a></li> 
-                                            <li><a href="checkout.html">پرداخت</a></li> 
-                                            <li><a href="cart.html">سبـد خریـد</a></li> 
-                                            <li><a href="login.html">ورود</a></li> 
+                                            <li><Link to="/shop">محصولات</Link></li>
+                                            <li><Link to='/cart'>سبـد خریـد</Link></li>
                                         </ul>
                                     </li> 
-                                    <li className="dropdown"><a href="#">اخبـار<i className="fa fa-angle-down"></i></a>
-                                        <ul role="menu" className="sub-menu">
-                                            <li><a href="blog.html">آخریـن اخبـار</a></li>
-                                            <li><a href="blog-single.html">صفحـه خبـر</a></li>
-                                        </ul>
-                                    </li> 
-                                    <li><a href="About.html">درباره مـا</a></li>
-                                    <li><a href="contact-us.html">تماس با مـا</a></li>
+                                    <li><Link to="/blogs" className="active">اخبار</Link></li>
+                                    <li><Link to="/about-us">درباره مـا</Link></li>
+                                    <li><Link to="/contact-us">تماس با مـا</Link></li>
                                 </ul>
                             </div>
                         </div>
