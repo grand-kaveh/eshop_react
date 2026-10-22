@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import One from '../assets/images/cart/one.png'
 
 export default function TableRowItem() {
@@ -5,10 +6,10 @@ export default function TableRowItem() {
     return (
         <tr>
             <td className="cart_product">
-                <a href=""><img src={One} alt=""/></a>
+                <Link to='/shop/1'><img src={One} alt=""/></Link>
             </td>
             <td className="cart_description">
-                <h4><a href="">کالای شمـاره 1</a></h4>
+                <h4><Link to='/shop/1'>کالای شمـاره 1</Link></h4>
                 <p>شناسـه : 01010101</p>
             </td>
             <td className="cart_price">

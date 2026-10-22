@@ -21,9 +21,6 @@ export default function Login() {
                                         <input type="checkbox" className="checkbox"/> 
                                         مرا بخاطـر بسپـار
                                     </span>
-                                    <span>
-                                        <a href="forget-password.html">رمـز عبـور خود را فراموش کرده ام</a>
-                                    </span>
                                     <button type="submit" className="btn btn-default">ورود</button>
                                 </form>
                             </div>

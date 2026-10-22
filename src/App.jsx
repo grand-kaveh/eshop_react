@@ -19,8 +19,8 @@ import Shop from './Components/Shop'
 import Details from './Components/Details'
 import DocTitle from './Components/Utilities/DocTitle'
 // import Blogs from './Components/Blogs'
-// import AboutUs from './Components/AboutUs'
-// import ContactUs from './Components/ContactUs'
+import AboutUs from './Components/AboutUs'
+import ContactUs from './Components/ContactUs'
 
 
 function App() {
@@ -41,8 +41,8 @@ function App() {
           <Route path='/cart' element={<Cart />} />
           <Route path='/checkout' element={<Checkout />} />
           {/* <Route path='/checkout' element={<Blogs />} /> */}
-          {/* <Route path='/about-us' element={<AboutUs />} /> */}
-          {/* <Route path='/contact-us' element={<ContactUs />} /> */}
+          <Route path='/about-us' element={<AboutUs />} />
+          <Route path='/contact-us' element={<ContactUs />} />
 
         </Routes>
 
