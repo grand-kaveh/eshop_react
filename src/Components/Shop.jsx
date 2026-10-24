@@ -1,10 +1,14 @@
 import Advertisement from '../assets/images/shop/advertisement.jpg'
 import Footer from "./Footer";
 import Header from "./Header";
-import Child_Last4Product from './HomePage/Child_Last4Product'
+import Child_RecentProduct from './HomePage/Child_RecentProduct'
 import ShopSidebar from './ShopSidebar';
+import GetProducts from './Utilities/Products';
 
 export default function Shop() {
+
+    let Products = GetProducts().slice(-12)
+    
 
     return (
         <>
@@ -24,22 +28,7 @@ export default function Shop() {
                             <div className="features_items">
                                 <h2 className="title text-center">محصولات عمده</h2>
                                 
-                                <Child_Last4Product />
-                                <Child_Last4Product />
-                                <Child_Last4Product />
-                                <Child_Last4Product />
-                                <Child_Last4Product />
-                                <Child_Last4Product />
-                                <Child_Last4Product />
-                                <Child_Last4Product />
-                                <Child_Last4Product />
-                                <Child_Last4Product />
-                                <Child_Last4Product />
-                                <Child_Last4Product />
-                                <Child_Last4Product />
-                                <Child_Last4Product />
-                                <Child_Last4Product />
-                                <Child_Last4Product />
+                                {Products.map((product, index) => <Child_RecentProduct key={index} product={product} />)}
                                 
                             </div>
                         </div>

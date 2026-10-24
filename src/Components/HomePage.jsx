@@ -2,12 +2,11 @@ import Girl2 from '../assets/images/home/girl2.jpg'
 import Pricing from '../assets/images/home/pricing.png'
 import Footer from './Footer'
 import Header from './Header'
-import CategoryTab from './HomePage/CategoryTab'
-import MoreSales from './HomePage/MoreSales'
-import RetailSales from './HomePage/RetailSales'
-import WholeSales from './HomePage/WholeSales'
+// import CategoryTab from './HomePage/CategoryTab'
+import RecentProducts from './HomePage/RecentProducts'
 
 export default function HomePage() {
+
 
     return (
         <>
@@ -48,24 +47,15 @@ export default function HomePage() {
                 <div className="row">
                     
                     <div className="recommended_items">
-                        <h2 className="title text-center">پر فروش ترین محصولات</h2>                  
-                        <MoreSales />
+                        <h2 className="title text-center">جدیدترین محصولات</h2>                  
+                        <RecentProducts />
                     </div>
                     
-                    <div className="col-sm-12 padding-right">
-                        <div className="features_items">
-                            <a href="shop-2.html"><h2 className="title text-center">فـروش خـرده</h2></a>
-                            <RetailSales />
-                        </div>			
-                        
-                        <div className="features_items">
-                            <a href="shop.html"><h2 className="title text-center">فـروش عـمده</h2></a>
-                            <WholeSales />
-                        </div>
+                    {/* <div className="col-sm-12 padding-right">
                         
                         <CategoryTab />
                         
-                    </div>
+                    </div> */}
                     
                 </div>			
             </div>

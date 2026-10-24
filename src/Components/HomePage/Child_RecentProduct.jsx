@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
-import Product from '../../assets/images/home/product.jpg'
+import Productimg from '../../assets/images/home/product.jpg'
 
 
-export default function Child_Last4Product() {
+export default function Child_RecentProduct({product}) {
 
     return (
         <div>
@@ -13,16 +13,16 @@ export default function Child_Last4Product() {
                         <div className="product-image-wrapper">
                             <div className="single-products">
                                 <div className="productinfo text-center">
-                                    <img src={Product} alt="" />
-                                    <h2>محصول شماره 1</h2>
-                                    <p>توضیحات کوتاه محصـول</p>
-                                    <Link to="/shop/1" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>مشاهده ی جزئیات</Link>
+                                    <img src={Productimg} alt={product.title} />
+                                    <h2>{product.title}</h2>
+                                    <p>{product.short_desc}</p>
+                                    <Link to={`/shop/${product.id}`} className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>مشاهده ی جزئیات</Link>
                                 </div>
                                 <div className="product-overlay">
                                     <div className="overlay-content">
-                                        <h2>2.500.000 R</h2>
-                                        <p>توضیحات کوتاه محصـول</p>
-                                        <Link to="/shop/1" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>مشاهده ی جزئیات</Link>
+                                        <h2>{product.price} R</h2>
+                                        <p>{product.short_desc}</p>
+                                        <Link to={`/shop/${product.id}`} className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>مشاهده ی جزئیات</Link>
                                     </div>
                                 </div>
                             </div>
