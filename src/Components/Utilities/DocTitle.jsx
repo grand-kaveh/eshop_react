@@ -3,10 +3,15 @@ import { useLocation } from 'react-router-dom';
 
 
 const titles = {
-  '/': 'صفحه اصلی',
-  '/about': 'درباره ما',
-  '/contact': 'تماس با ما',
-  '/profile': 'پروفایل کاربر',
+    '/': 'صفحه اصلی',
+    '/about-us': 'درباره ما',
+    '/contact-us': 'تماس با ما',
+    '/favariots': 'مورد علاقه ها',
+    '/shop': 'لیست محصولات',
+    '/login': 'صفحه ورود',
+    '/cart': 'سبد خرید',
+    '/checkout': 'پرداخت',
+    '/blogs': 'اخبار',
 };
 
 function DocumentTitle() {

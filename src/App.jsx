@@ -21,33 +21,34 @@ import DocTitle from './Components/Utilities/DocTitle'
 import Blogs from './Components/Blogs'
 import AboutUs from './Components/AboutUs'
 import ContactUs from './Components/ContactUs'
+import { AppDataProvider } from './Components/Utilities/NewContext'
 
 
 function App() {
 
   return (
-    <>
-      <Router>
+      <AppDataProvider>
+        <Router>
 
-        <DocTitle />
-        
-        <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path='*' element={<NotFound />} />
-          <Route path='/favariots' element={<Favariots />} />
-          <Route path='/shop' element={<Shop />} />
-          <Route path='/shop/:ProductId' element={<Details />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/cart' element={<Cart />} />
-          <Route path='/checkout' element={<Checkout />} />
-          <Route path='/blogs' element={<Blogs />} />
-          <Route path='/about-us' element={<AboutUs />} />
-          <Route path='/contact-us' element={<ContactUs />} />
+          <DocTitle />
+          
+          <Routes>
+            <Route path='/' element={<HomePage />} />
+            <Route path='*' element={<NotFound />} />
+            <Route path='/favariots' element={<Favariots />} />
+            <Route path='/shop' element={<Shop />} />
+            <Route path='/shop/:ProductId' element={<Details />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/cart' element={<Cart />} />
+            <Route path='/checkout' element={<Checkout />} />
+            <Route path='/blogs' element={<Blogs />} />
+            <Route path='/about-us' element={<AboutUs />} />
+            <Route path='/contact-us' element={<ContactUs />} />
 
-        </Routes>
+          </Routes>
 
-    </Router>
-    </>
+      </Router>
+    </AppDataProvider>
   )
 }
 

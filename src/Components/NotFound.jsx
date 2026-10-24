@@ -3,6 +3,8 @@ import I404 from '../assets/images/404/404.png'
 import { Link } from 'react-router-dom'
 export default function NotFound() {
 
+    document.title = '404 | صفحه یافت نشد';
+
     return (
         <div className="container text-center">
             <div className="logo-404">

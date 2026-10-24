@@ -13,6 +13,9 @@ import ShopSidebar from './ShopSidebar'
 
 export default function Details() {
 
+    // document.title = 'نام محصول';
+
+
     return (
         <>
             <Header />
