@@ -2,7 +2,6 @@ import Girl2 from '../assets/images/home/girl2.jpg'
 import Pricing from '../assets/images/home/pricing.png'
 import Footer from './Footer'
 import Header from './Header'
-// import CategoryTab from './HomePage/CategoryTab'
 import RecentProducts from './HomePage/RecentProducts'
 
 export default function HomePage() {
@@ -50,12 +49,6 @@ export default function HomePage() {
                         <h2 className="title text-center">جدیدترین محصولات</h2>                  
                         <RecentProducts />
                     </div>
-                    
-                    {/* <div className="col-sm-12 padding-right">
-                        
-                        <CategoryTab />
-                        
-                    </div> */}
                     
                 </div>			
             </div>

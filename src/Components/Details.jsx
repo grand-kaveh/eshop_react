@@ -10,11 +10,20 @@ import Footer from "./Footer";
 import Header from "./Header";
 import DetailsComment from "./DetailsComment";
 import ShopSidebar from './ShopSidebar'
+import GetProducts from './Utilities/Products'
+import { useParams } from 'react-router-dom'
 
 export default function Details() {
 
     // document.title = 'نام محصول';
+    let all_products = GetProducts()
+    const { ProductId } = useParams();
+    
+    const product = all_products.find(item => item.id === ProductId);
 
+    if (!product) {
+        return <p>محصولی با این شناسه پیدا نشد</p>;
+    }
 
     return (
         <>
@@ -28,7 +37,7 @@ export default function Details() {
                             <div className="product-details">
                                 <div className="col-sm-5">
                                     <div className="view-product">
-                                        <img src={img1} alt="" />
+                                        <img src={img1} alt={product.title} />
                                     </div>
                                     <div id="similar-product" className="carousel slide" data-ride="carousel">
                                         
@@ -47,12 +56,11 @@ export default function Details() {
                                     <div className="product-information">
                                         <img src={newpng} className="newarrival" alt="" />
                                         <div>
-                                            <h2>کـالای شمـاره 010</h2>
-                                            <p>شناسـه : 0110110</p>
+                                            <h2>{product.title}</h2>
                                         </div>
                                         <div>
                                             <span>
-                                                <span>قیمت : 2.350.000 ريال</span>
+                                                <span>قیمت : {product.price} ريال</span>
                                             </span>
                                             <span>
                                                 <button type="button" className="btn btn-fefault cart">
@@ -62,9 +70,8 @@ export default function Details() {
                                             </span>
                                         </div>
                                         <div>
-                                            <p><b>موجـودی :</b> در انبـار موجود می باشد</p>
-                                            <p><b>شرایـط :</b> جدیـد</p>
-                                            <p><b>برنـد :</b> برنـد </p>
+                                            <p><b>موجـودی :</b> {product.isexist ? 'در انبار موجود میباشد' : 'در حال حاضر موجودی نداریم'}</p>
+                                            <p><b>برنـد :</b> {product.brand} </p>
                                         </div>
                                         <span  className="socials-share share">
                                             <ul>
@@ -103,7 +110,7 @@ export default function Details() {
                                 <div className="tab-content">
 
                                     <div className="tab-pane fade" id="details" >
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ipsa!</p>
+                                        <p>{product.desc}</p>
 
                                     </div>
                                     
