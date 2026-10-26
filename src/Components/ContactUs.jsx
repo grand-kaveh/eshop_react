@@ -14,9 +14,9 @@ export default function ContactUs() {
         <div id="contact-page" className="container">
             <div className="bg">
 
-                <div className="row">  	
+                <div className="row sans">  	
                     <div className="col-sm-8">
-                        <div className="contact-form">
+                        <div className="contact-form sans">
                             <h2 className="title text-center">با ما در ارتباط باشیـد</h2>
                             
                             <form id="main-contact-form" className="contact-form row" name="contact-form" method="post">

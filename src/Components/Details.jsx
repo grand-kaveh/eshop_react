@@ -1,7 +1,3 @@
-import Similar1 from '../assets/images/product-details/similar1.jpg'
-import Similar2 from '../assets/images/product-details/similar2.jpg'
-import Similar3 from '../assets/images/product-details/similar3.jpg'
-import img1 from '../assets/images/product-details/1.jpg'
 import newpng from '../assets/images/product-details/new.png'
 import Baleimg from '../assets/images/product-details/Bale.png'
 import Soroushimg from '../assets/images/product-details/Soroush.png'
@@ -37,18 +33,7 @@ export default function Details() {
                             <div className="product-details">
                                 <div className="col-sm-5">
                                     <div className="view-product">
-                                        <img src={img1} alt={product.title} />
-                                    </div>
-                                    <div id="similar-product" className="carousel slide" data-ride="carousel">
-                                        
-                                        <div className="carousel-inner">
-                                            <div className="item active">
-                                            <a href=""><img src={Similar1} alt="" /></a>
-                                            <a href=""><img src={Similar2} alt="" /></a>
-                                            <a href=""><img src={Similar3} alt="" /></a>
-                                            </div>
-                                            
-                                        </div>
+                                        <img src={product.img} alt={product.title} />
                                     </div>
 
                                 </div>

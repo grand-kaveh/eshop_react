@@ -4,7 +4,7 @@ export default function DetailsComment() {
 
     return(
 
-        <div className="tab-pane fade in active" id="reviews" >
+        <div className="tab-pane fade in active sans" id="reviews" >
             <div className="col-sm-12">
 
 
@@ -24,7 +24,7 @@ export default function DetailsComment() {
                         <input type="text" placeholder="نام و نام خانوادگـی"/>
                         <input type="email" placeholder="آدرس ایمیـل"/>
                     </span>
-                    <textarea name="" ></textarea>
+                    <textarea name="" placeholder="نظر خود را وارد کنید:"></textarea>
                     
                     <button type="button" className="btn btn-default pull-left">
                         ارسـال

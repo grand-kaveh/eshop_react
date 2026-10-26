@@ -1,7 +1,7 @@
 export default function CommentItem() {
 
     return(
-        <div>
+        <div className="sans">
             <ul>
                 <li><a href=""><i className="fa fa-user"></i>مشتـری 1</a></li>
                 <li><a href=""><i className="fa fa-clock-o"></i>12:41 ب . ظ</a></li>

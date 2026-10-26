@@ -23,8 +23,8 @@ export default function HomePage() {
                                 <div className="item">
                                     <div className="col-sm-6">
                                         <h1><span>SHOP</span>CENTER</h1>
-                                        <h2>Shop Center</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                        <h2>مرکز خرید</h2>
+                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده ازلورملورم ایپسوم متن ساختگی با تولید سادگی نامفهلورم ایپسوم متن ساختگی با تول نعت چاپ و با استفاده ازلورملورم ایپسوم متن ساختگی با تولید سادگی نامفه</p>
                                     </div>
                                     <div className="col-sm-6">
                                         <img src={Girl2} className="girl img-responsive" alt="" />

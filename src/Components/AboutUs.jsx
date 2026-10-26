@@ -8,7 +8,7 @@ export default function AboutUs() {
         <>
         <Header />
 
-        <div id="contact-page" className="container">
+        <div id="contact-page" className="container sans">
             <div className="bg">
                         
                 <div className="row"> 

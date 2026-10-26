@@ -11,7 +11,7 @@ export default function Blogs() {
             <Header />
 
         	<section>
-                <div className="container">
+                <div className="container sans">
                     <div className="row">
                         
                         <div className="col-sm-9">

@@ -8,7 +8,7 @@ export default function Login() {
         <>
             <Header />
             
-            <div className="container">
+            <div className="container sans">
                 <section id="form">
                     <div className="row">
                         <div className="col-sm-4 col-sm-offset-1">

@@ -10,7 +10,7 @@ export default function RecentProducts() {
         <div>
             <div>
                 <div>
-                    {Products.map((product, index) => <Child_RecentProduct key={index} product={product} />)}
+                    {Products.map((product, index) => <Child_RecentProduct key={index} product={product} size_height_product='3' />)}
                 </div>
             </div>
         </div>

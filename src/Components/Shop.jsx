@@ -28,7 +28,7 @@ export default function Shop() {
                             <div className="features_items">
                                 <h2 className="title text-center">محصولات عمده</h2>
                                 
-                                {Products.map((product, index) => <Child_RecentProduct key={index} product={product} />)}
+                                {Products.map((product, index) => <Child_RecentProduct key={index} product={product} size_height_product='4' />)}
                                 
                             </div>
                         </div>

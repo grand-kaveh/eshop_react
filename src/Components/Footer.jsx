@@ -4,12 +4,12 @@ export default function Footer() {
 
 
     return (
-        <footer id="footer">
+        <footer id="footer" >
             <div className="footer-Before">
                 <div className="container">
                     <div className="block-news">
                         <div className="row">
-                            <h3>با عضویت در خبـرنامه ما از تخفیفات ویـژه ما با خبـر شوید ... </h3>
+                            <h3 className='sans'>با عضویت در خبـرنامه ما از تخفیفات ویـژه ما با خبـر شوید ... </h3>
                             <div className="searchform newslatter">
                                 <input type="text" placeholder="آدرس ایمیـل شما ..."/>
                                 <button type="submit" className="btn btn-default">
