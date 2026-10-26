@@ -1,3 +1,4 @@
+import { useSearchParams } from 'react-router-dom';
 import Advertisement from '../assets/images/shop/advertisement.jpg'
 import Footer from "./Footer";
 import Header from "./Header";
@@ -5,10 +6,21 @@ import Child_RecentProduct from './HomePage/Child_RecentProduct'
 import ShopSidebar from './ShopSidebar';
 import GetProducts from './Utilities/Products';
 
-export default function Shop() {
 
-    let Products = GetProducts().slice(-12)
+export default function Shop() {
     
+    const [searchParams] = useSearchParams();
+    const category = searchParams.get("category");
+    const brand = searchParams.get("brand");
+    
+    let Products = GetProducts()
+
+    if(category) {
+        Products = Products.filter((product) => product.title.includes(category))               
+    }
+    if(brand) {
+        Products = Products.filter((product) => product.brand.includes(brand))               
+    }
 
     return (
         <>
