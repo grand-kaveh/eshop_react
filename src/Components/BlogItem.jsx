@@ -1,20 +1,27 @@
-import blogimg from "../assets/images/blog/blog-one.jpg"
+export default function BlogItem({blog}) {
 
-export default function BlogItem() {
+    const d = new Date(blog.publishedAt);
+
+    const year  = d.getFullYear();
+    const month = d.getMonth() + 1; 
+    const day   = d.getDate();
+    const hour  = d.getHours();      
+    const min   = d.getMinutes();
 
     return(
         <div className="single-blog-post">
-            <h3>خبـر شمـاره 1 - خبـر</h3>
+            <h3>{blog.title}</h3>
             <div className="post-meta">
                 <ul>
-                    <li><i className="fa fa-clock-o"></i> 17:20 ب.ظ</li>
-                    <li><i className="fa fa-calendar"></i> 28 تیـر 1397</li>
+                    <li><i className="fa fa-user"></i>{blog.author}</li>
+                    <li><i className="fa fa-clock-o"></i> {hour}:{min}</li>
+                    <li><i className="fa fa-calendar"></i> {year}-{day}-{month}</li>
                 </ul>
             </div>
-            <a href="">
-                <img src={blogimg} alt="" />
+            <a href={blog.url} target="_blank">
+                <img src={blog.urlToImage} alt={blog.title} />
             </a>
-            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده ازلورملورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت</p>
+            <p>{blog.description}</p>
         </div>
     )
 }
