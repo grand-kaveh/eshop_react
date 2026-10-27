@@ -1,8 +1,12 @@
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import Logo from '../assets/images/home/logo.png'
+import { useContext } from 'react'
+import { NewContext } from './Utilities/NewContext'
+
 
 export default function Header() {
 
+    let {is_login} = useContext(NewContext)
 
     return (
         <header id="header">
@@ -38,16 +42,16 @@ export default function Header() {
                         
                         <div className="col-sm-4" >
                             <div className="logo">
-                                <a href="index.html"><img src={Logo} alt="Logo" /></a>  
+                                <Link to="/"><img src={Logo} alt="Logo" /></Link>  
                             </div>
                         </div>
                         
                         <div className="col-sm-8 header-middle-menu">
                             <div className="shop-menu pull-right">
                                 <ul className="nav navbar-nav">
-                                    <li><Link to='/favariots'><i className="fa fa-star"></i> لیست علاقه مندی ها</Link></li>
-                                    <li><Link to='/login'><i className="fa fa-lock"></i> ورود</Link></li>
-                                    <li><Link to='/cart'><i className="fa fa-shopping-cart"></i> سبد خریـد</Link></li>
+                                    {is_login ? '' : <li><NavLink to="/login" className={({ isActive }) => (isActive ? "active" : "")}><i className="fa fa-lock"></i> ورود</NavLink></li> }
+                                    {is_login ? <li><NavLink to="/favariots" className={({ isActive }) => (isActive ? "active" : "")}><i className="fa fa-star"></i> لیست علاقه مندی ها</NavLink></li> : ''}
+                                    {is_login ? <li><NavLink to="/cart" className={({ isActive }) => (isActive ? "active" : "")}><i className="fa fa-shopping-cart"></i> سبد خریـد</NavLink></li> : ''}
                                 </ul>
                             </div>
                         </div>
@@ -76,16 +80,16 @@ export default function Header() {
                             </div>
                             <div className="mainmenu pull-right">
                                 <ul className="nav navbar-nav collapse navbar-collapse">
-                                    <li><Link to="/" className="active">خـانه</Link></li>
+                                    <li><NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>خـانه</NavLink></li>
                                     <li className="dropdown"><a>فروشگـاه<i className="fa fa-angle-down"></i></a>
                                         <ul role="menu" className="sub-menu">
                                             <li><Link to="/shop">محصولات</Link></li>
-                                            <li><Link to='/cart'>سبـد خریـد</Link></li>
+                                            {is_login ? <li><Link to='/cart'>سبـد خریـد</Link></li> : ''}
                                         </ul>
-                                    </li> 
-                                    <li><Link to="/blogs" className="active">اخبار</Link></li>
-                                    <li><Link to="/about-us">درباره مـا</Link></li>
-                                    <li><Link to="/contact-us">تماس با مـا</Link></li>
+                                    </li>
+                                    <li><NavLink to="/blogs" className={({ isActive }) => (isActive ? "active" : "")}>اخبار</NavLink></li>
+                                    <li><NavLink to="/about-us" className={({ isActive }) => (isActive ? "active" : "")}>درباره مـا</NavLink></li>
+                                    <li><NavLink to="/contact-us" className={({ isActive }) => (isActive ? "active" : "")}>تماس با مـا</NavLink></li>
                                 </ul>
                             </div>
                         </div>

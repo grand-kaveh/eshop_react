@@ -7,7 +7,9 @@ import Header from "./Header";
 import DetailsComment from "./DetailsComment";
 import ShopSidebar from './ShopSidebar'
 import GetProducts from './Utilities/Products'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
+import { useContext, useState } from 'react';
+import { NewContext } from './Utilities/NewContext';
 
 export default function Details() {
 
@@ -20,6 +22,9 @@ export default function Details() {
     if (!product) {
         return <p>محصولی با این شناسه پیدا نشد</p>;
     }
+
+    let {is_login} = useContext(NewContext)
+    let [tabshow, set_tabshow] = useState('details')
 
     return (
         <>
@@ -48,10 +53,7 @@ export default function Details() {
                                                 <span>قیمت : {product.price} ريال</span>
                                             </span>
                                             <span>
-                                                <button type="button" className="btn btn-fefault cart">
-                                                    <i className="fa fa-shopping-cart"></i>
-                                                    افـزودن به سبـد خریـد
-                                                </button>
+                                                {is_login ? <Link to='/cart' type="button" className="btn btn-fefault cart"><i className="fa fa-shopping-cart"></i>افـزودن به سبـد خریـد</Link> : <Link to='/login' type="button" className="btn btn-fefault cart">برای افزودن به سبد خرید ابتدا باید وارد سایت شوید</Link>}
                                             </span>
                                         </div>
                                         <div>
@@ -88,22 +90,17 @@ export default function Details() {
                             <div className="category-tab shop-details-tab">
                                 <div className="col-sm-12">
                                     <ul className="nav nav-tabs">
-                                        <li><a href="#details" data-toggle="tab">جزئیات</a></li>
-                                        <li className="active"><a href="#reviews" data-toggle="tab">نظرات (5)</a></li>
+                                        <li onClick={() =>set_tabshow('details')} className={tabshow == 'details' ? 'active' : ''}><a>جزئیات</a></li>
+                                        <li onClick={() =>set_tabshow('comments')} className={tabshow == 'comments' ? 'active' : ''}><a>نظرات (5)</a></li>
                                     </ul>
                                 </div>
                                 <div className="tab-content">
 
-                                    <div className="tab-pane fade" id="details" >
-                                        <p>{product.desc}</p>
-
-                                    </div>
-                                    
-                                    <DetailsComment />
+                                    {tabshow == 'details' ? <div className="fade-in sans" id="details" ><p>{product.desc}</p></div> : '' }
+                                    {tabshow == 'comments' ? <div className="fade-in sans" id="reviews" ><DetailsComment /></div> : ''}
                                     
                                 </div>
                             </div>
-                            
                         </div>
                         
                         <ShopSidebar />

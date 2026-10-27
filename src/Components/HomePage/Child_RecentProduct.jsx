@@ -1,4 +1,6 @@
+import { useContext } from 'react';
 import { Link } from 'react-router-dom'
+import { NewContext } from '../Utilities/NewContext';
 
 export default function Child_RecentProduct({product, size_height_product}) {
 
@@ -8,6 +10,8 @@ export default function Child_RecentProduct({product, size_height_product}) {
         if (words.length <= maxWords) return text;
         return words.slice(0, maxWords).join(" ") + "...";
     }
+
+    let {is_login} = useContext(NewContext)
 
     return (
                     
@@ -30,12 +34,7 @@ export default function Child_RecentProduct({product, size_height_product}) {
                 </div>
                 <div className="choose">
                     <ul className="nav nav-pills nav-justified">
-                        <li>
-                            <a href="#">
-                                <i className="fa fa-plus-square"></i>لیست علاقه مندی ها
-                            </a>
-                        </li>
-                        
+                        {is_login ? <li><Link to="/favariots"><i className="fa fa-plus-square"></i>لیست علاقه مندی ها</Link></li> : ''}
                     </ul>
                 </div>
             </div>

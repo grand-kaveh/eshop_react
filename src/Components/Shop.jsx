@@ -1,4 +1,4 @@
-import { useSearchParams } from 'react-router-dom';
+import { useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 import Advertisement from '../assets/images/shop/advertisement.jpg'
 import Footer from "./Footer";
 import Header from "./Header";
@@ -21,6 +21,9 @@ export default function Shop() {
     if(brand) {
         Products = Products.filter((product) => product.brand.includes(brand))               
     }
+
+    // let loc = useLocation()
+    // let nav = useNavigate()
 
     return (
         <>
