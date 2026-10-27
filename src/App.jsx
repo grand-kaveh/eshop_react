@@ -12,7 +12,7 @@ import NotFound from './Components/NotFound'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import HomePage from './Components/HomePage'
 import Favariots from './Components/Favariots'
-import Login from './Components/Login'
+import Auth from './Components/Auth'
 import Cart from './Components/Cart'
 import Checkout from './Components/Checkout'
 import Shop from './Components/Shop'
@@ -38,7 +38,7 @@ function App() {
             <Route path='/favariots' element={<Favariots />} />
             <Route path='/shop' element={<Shop />} />
             <Route path='/shop/:ProductId' element={<Details />} />
-            <Route path='/login' element={<Login />} />
+            <Route path='/login' element={<Auth />} />
             <Route path='/cart' element={<Cart />} />
             <Route path='/checkout' element={<Checkout />} />
             <Route path='/blogs' element={<Blogs />} />

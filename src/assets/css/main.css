@@ -31,6 +31,18 @@ body {
 .sans {
   font-family: 'BYekan', sans-serif !important;
 }
+.error_msg{
+  color: red;
+  background: #ffcece;
+  padding: 10px;
+  border: 1px solid red;
+}
+.success_msg{
+  color: green;
+  background: #beffa0;
+  padding: 10px;
+  border: 1px solid green;
+}
 
 ul li {
   list-style: none;

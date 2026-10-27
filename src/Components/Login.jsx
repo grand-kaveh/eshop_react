@@ -1,49 +1,54 @@
-import Footer from "./Footer";
-import Header from "./Header";
-
+import { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { NewContext } from "./Utilities/NewContext";
 
 export default function Login() {
 
-    return (
-        <>
-            <Header />
-            
-            <div className="container sans">
-                <section id="form">
-                    <div className="row">
-                        <div className="col-sm-4 col-sm-offset-1">
-                            <div className="login-form">
-                                <h2>ورود به حساب کاربـری :</h2>
-                                <form action="#">
-                                    <input type="text" placeholder="نام کاربری" />
-                                    <input type="email" placeholder="آدرس ایمیـل" />
-                                    <span>
-                                        <input type="checkbox" className="checkbox"/> 
-                                        مرا بخاطـر بسپـار
-                                    </span>
-                                    <button type="submit" className="btn btn-default">ورود</button>
-                                </form>
-                            </div>
-                        </div>
-                        <div className="col-sm-1">
-                            <h2 className="or">یا</h2>
-                        </div>
-                        <div className="col-sm-4">
-                            <div className="signup-form">
-                                <h2>ثبت نام کاربـر جدیـد</h2>
-                                <form action="#">
-                                    <input type="text" placeholder="نام کاربـری"/>
-                                    <input type="email" placeholder="آدرس ایمیـل"/>
-                                    <input type="password" placeholder="رمـز عبـور"/>
-                                    <button type="submit" className="btn btn-default">ثبت نام</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <Footer />
+    let [msg, set_msg] = useState('')
+    let {set_is_login} = useContext(NewContext)
+    const navigate = useNavigate()
+    
 
-        </>
+    function login_form(ev) {
+        if(ev.key == 'Enter' || ev._reactName == 'onClick'){
+            set_msg('')
+            // let un_field = document.getElementById('un_field').value;
+            // let pw_field = document.getElementById('pw_field').value;
+
+            let un_field = 'admin'
+            let pw_field = 'admin'
+
+            if(un_field.length <=3){set_msg('نام کاربری نباید کمتر از 3 حرف باشد.');return;}
+            if (!pw_field){set_msg("رمز عبور را وارد کنید."); return;} 
+        
+            let saved_user = JSON.parse(localStorage.getItem('new_user'))
+            if(saved_user && saved_user.username == un_field && saved_user.pw == pw_field){ 
+                set_msg('ورود شما به سایت تایید شد.');
+                set_is_login(true)
+                localStorage.setItem('is_login', true);
+                navigate('/')
+            } else {
+                set_msg('نام کاربری یا رمزعبور اشتباه است.')
+                return;
+            }
+        }
+    }
+
+    return (
+        <div className="col-sm-4 col-sm-offset-1">
+            <div className="login-form">
+                <h2>ورود به حساب کاربـری :</h2>
+                {msg ? <p className="error_msg">{msg}</p> : ''}
+                <form>
+                    <input type="text" onKeyDown={login_form} id="un_field" placeholder="نام کاربری" />
+                    <input type="password" onKeyDown={login_form} id="pw_field" placeholder="رمز عبور" />
+                    <span>
+                        <input type="checkbox" id="rememberMe" className="checkbox"/> 
+                        مرا بخاطـر بسپـار
+                    </span>
+                    <button type="button" onClick={login_form} className="btn btn-default">ورود</button>
+                </form>
+            </div>
+        </div>
     )
 }
