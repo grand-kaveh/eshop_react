@@ -1,4 +1,4 @@
-import Tabs from '../../assets/images/home/Tabs.png'
+import Tabs from '../assets/images/home/Tabs.png'
 
 export default function ItemCategoryTab() {
 

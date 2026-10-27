@@ -1,5 +1,5 @@
 import Child_RecentProduct from "./Child_RecentProduct";
-import GetProducts from '../Utilities/Products'
+import GetProducts from './Utilities/Products'
 
 
 export default function RecentProducts() {

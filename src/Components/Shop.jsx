@@ -1,8 +1,8 @@
-import { useLocation, useNavigate, useSearchParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 import Advertisement from '../assets/images/shop/advertisement.jpg'
 import Footer from "./Footer";
 import Header from "./Header";
-import Child_RecentProduct from './HomePage/Child_RecentProduct'
+import Child_RecentProduct from './Child_RecentProduct'
 import ShopSidebar from './ShopSidebar';
 import GetProducts from './Utilities/Products';
 
@@ -22,8 +22,6 @@ export default function Shop() {
         Products = Products.filter((product) => product.brand.includes(brand))               
     }
 
-    // let loc = useLocation()
-    // let nav = useNavigate()
 
     return (
         <>

@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import { NewContext } from "./Utilities/NewContext";
@@ -12,8 +12,6 @@ export default function Auth() {
     if(is_login) {
         return <h3>شما در سایت ثبتنام کرده اید.</h3>
     }
-
-
 
     return (
         <>

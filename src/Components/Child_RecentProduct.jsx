@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { Link } from 'react-router-dom'
-import { NewContext } from '../Utilities/NewContext';
+import { NewContext } from './Utilities/NewContext';
 
 export default function Child_RecentProduct({product, size_height_product}) {
 

@@ -2,7 +2,7 @@ import Girl2 from '../assets/images/home/girl2.jpg'
 import Pricing from '../assets/images/home/pricing.png'
 import Footer from './Footer'
 import Header from './Header'
-import RecentProducts from './HomePage/RecentProducts'
+import RecentProducts from './RecentProducts'
 
 export default function HomePage() {
 
