@@ -12,9 +12,9 @@ export default function Register() {
     function register_form(ev) {
         if(ev.key == 'Enter' || ev._reactName == 'onClick'){
             set_msg('')
-            let un_field = document.getElementById('un_field').value;
+            let un_field = document.getElementById('un_Lfield').value;
             let email_field = document.getElementById('email_field').value;
-            let pw_field = document.getElementById('password_field').value;
+            let pw_field = document.getElementById('password_Lfield').value;
 
             // username validation
             if(un_field.length <=3){set_msg('نام کاربری نباید کمتر از 3 حرف باشد.');return;}
@@ -36,9 +36,9 @@ export default function Register() {
                 return;
             } else {
                 localStorage.setItem('new_user', JSON.stringify({username: un_field, email: email_field, pw: pw_field}));
-                document.getElementById('un_field').value = '';
+                document.getElementById('un_Lfield').value = '';
                 document.getElementById('email_field').value = '';
-                document.getElementById('password_field').value = '';
+                document.getElementById('password_Lfield').value = '';
                 set_msg('ثبتنام شما با موفقیت انجام شد.')
                 return;
             }
@@ -51,9 +51,9 @@ export default function Register() {
                 <h2>ثبت نام کاربـر جدیـد</h2>
                 {msg ? <p className="error_msg">{msg}</p> : ''}
                 <form>
-                    <input type="text" id="un_field" onKeyDown={register_form} placeholder="نام کاربـری"/>
+                    <input type="text" id="un_Lfield" onKeyDown={register_form} placeholder="نام کاربـری"/>
                     <input type="email" id="email_field" onKeyDown={register_form} placeholder="آدرس ایمیـل"/>
-                    <input type="password" id="password_field" onKeyDown={register_form} placeholder="رمـز عبـور"/>
+                    <input type="password" id="password_Lfield" onKeyDown={register_form} placeholder="رمـز عبـور"/>
                     <button type="button" onClick={register_form} className="btn btn-default">ثبت نام</button>
                 </form>
             </div>

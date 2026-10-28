@@ -8,13 +8,15 @@ export default function Login() {
     let {set_is_login} = useContext(NewContext)
     const navigate = useNavigate()
     
-
+    
     function login_form(ev) {
         if(ev.key == 'Enter' || ev._reactName == 'onClick'){
             set_msg('')
+            
             // let un_field = document.getElementById('un_field').value;
             // let pw_field = document.getElementById('pw_field').value;
-
+            
+            // new_user {"username":"admin","email":"admin@gmail.com","pw":"admin"}
             let un_field = 'admin'
             let pw_field = 'admin'
 
@@ -26,6 +28,7 @@ export default function Login() {
                 set_msg('ورود شما به سایت تایید شد.');
                 set_is_login(true)
                 localStorage.setItem('is_login', true);
+                
                 navigate('/')
             } else {
                 set_msg('نام کاربری یا رمزعبور اشتباه است.')

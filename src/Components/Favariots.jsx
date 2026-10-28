@@ -1,9 +1,14 @@
+import { useContext } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
-import TableRowItem from "./TableRowItem";
+import TableRowItemFav from "./TableRowItemFav";
+import { NewContext } from "./Utilities/NewContext";
+import { Link } from "react-router-dom";
 
 
 export default function Favariots() {
+
+    let {user_favs} = useContext(NewContext)
 
     return (
         <>
@@ -11,10 +16,10 @@ export default function Favariots() {
 
             <section id="cart_items">
                 <div className="container">
-                    <div className="breadcrumbs">
+                    <div className="breadcrumbs sans">
                         <ol className="breadcrumb">
-                        <li><a href="#">خانـه</a></li>
-                        <li className="active">پرداخت</li>
+                        <li><Link to="/">خانـه</Link></li>
+                        <li className="active">لیست علاقه مندی ها</li>
                         </ol>
                     </div>
                     <div className="table-responsive cart_info">
@@ -24,19 +29,17 @@ export default function Favariots() {
                                     <td className="image">کـالا</td>
                                     <td className="description"></td>
                                     <td className="price">قیمت</td>
-                                    <td className="quantity">تعـداد</td>
-                                    <td className="total">مجمـوع</td>
                                     <td></td>
                                 </tr>
                             </thead>
                             <tbody>
-
-                                <TableRowItem />
-                                <TableRowItem />
-                                <TableRowItem />
+                                
+                                {user_favs.favs.map((fav, index) => <TableRowItemFav key={index} fav={fav} />)}
 
                             </tbody>
                         </table>
+                        {user_favs.favs.length == 0 ? <p className="sans alert">لیست علاقه مندی های شما خالی است.</p> : ''}
+
                     </div>
                 </div>
             </section>

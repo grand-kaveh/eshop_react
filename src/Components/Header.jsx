@@ -52,6 +52,7 @@ export default function Header() {
                                     {is_login ? '' : <li><NavLink to="/login" className={({ isActive }) => (isActive ? "active" : "")}><i className="fa fa-lock"></i> ورود</NavLink></li> }
                                     {is_login ? <li><NavLink to="/favariots" className={({ isActive }) => (isActive ? "active" : "")}><i className="fa fa-star"></i> لیست علاقه مندی ها</NavLink></li> : ''}
                                     {is_login ? <li><NavLink to="/cart" className={({ isActive }) => (isActive ? "active" : "")}><i className="fa fa-shopping-cart"></i> سبد خریـد</NavLink></li> : ''}
+                                    {is_login ? <li><Link to='/logout'>خروج</Link></li> : ''}
                                 </ul>
                             </div>
                         </div>
@@ -84,6 +85,7 @@ export default function Header() {
                                     <li className="dropdown"><a>فروشگـاه<i className="fa fa-angle-down"></i></a>
                                         <ul role="menu" className="sub-menu">
                                             <li><Link to="/shop">محصولات</Link></li>
+                                            {is_login ? <li><Link to='/favariots'>لیست علاقه مندی ها</Link></li> : ''}
                                             {is_login ? <li><Link to='/cart'>سبـد خریـد</Link></li> : ''}
                                         </ul>
                                     </li>

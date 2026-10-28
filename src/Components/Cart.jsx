@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
-import TableRowItem from "./TableRowItem";
+import TableRowItemCart from "./TableRowItemCart";
 
 
 export default function Cart() {
@@ -32,9 +32,9 @@ export default function Cart() {
                             </thead>
                             <tbody>
 
-                                <TableRowItem />
-                                <TableRowItem />
-                                <TableRowItem />
+                                <TableRowItemCart />
+                                <TableRowItemCart />
+                                <TableRowItemCart />
 
                             </tbody>
                         </table>
@@ -73,7 +73,7 @@ export default function Cart() {
                                     <li>مجمـوع <span>2.212.700 ريال</span></li>
                                 </ul>
                                     <a className="btn btn-default update" href="shop.html">به روز رسانی سبـد خریـد </a>
-                                    <Link className="btn btn-default check_out" to="/checkout">پرداخت</Link>
+                                    <a className="btn btn-default check_out" href="">پرداخت</a>
                             </div>
                         </div>
                     </div>

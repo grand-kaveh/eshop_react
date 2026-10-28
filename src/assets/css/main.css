@@ -43,6 +43,35 @@ body {
   padding: 10px;
   border: 1px solid green;
 }
+.alert {
+  padding: 10px 15px;
+  background-color: #f2f2f2;
+  color: black;
+  border-bottom: 1px solid #fd9b18; 
+}
+.alert_err {
+    padding: 10px 15px;
+    color: white;
+    background: #e72300; 
+  border-bottom: 1px solid #fd1818;
+}
+.alert_pri {
+  padding: 10px 15px;
+  color: white;
+  background: #43b0ff;
+  border-bottom: 1px solid #18c8fd;
+}
+.alert_suc {
+    padding: 10px 15px;
+    color: white;
+    background: #00e714;
+  border-bottom: 1px solid #2ffd18;
+}
+
+.cart_product img {
+  height: 130px;
+  width: 130px;
+}
 
 ul li {
   list-style: none;

@@ -14,7 +14,6 @@ import HomePage from './Components/HomePage'
 import Favariots from './Components/Favariots'
 import Auth from './Components/Auth'
 import Cart from './Components/Cart'
-import Checkout from './Components/Checkout'
 import Shop from './Components/Shop'
 import Details from './Components/Details'
 import DocTitle from './Components/Utilities/DocTitle'
@@ -22,6 +21,8 @@ import Blogs from './Components/Blogs'
 import AboutUs from './Components/AboutUs'
 import ContactUs from './Components/ContactUs'
 import { AppDataProvider } from './Components/Utilities/NewContext'
+import Alert from "./Components/Alert"
+import Logout from "./Components/Logout"
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Router>
 
           <DocTitle />
+          <Alert />
           
           <Routes>
             <Route path='/' element={<HomePage />} />
@@ -39,8 +41,8 @@ function App() {
             <Route path='/shop' element={<Shop />} />
             <Route path='/shop/:ProductId' element={<Details />} />
             <Route path='/login' element={<Auth />} />
+            <Route path='/logout' element={<Logout />} />
             <Route path='/cart' element={<Cart />} />
-            <Route path='/checkout' element={<Checkout />} />
             <Route path='/blogs' element={<Blogs />} />
             <Route path='/about-us' element={<AboutUs />} />
             <Route path='/contact-us' element={<ContactUs />} />
